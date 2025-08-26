@@ -11,7 +11,7 @@ html, body {
   width: 100%;
   max-width: 100%;
   position: relative;
-  background: url('../assets/2.png') repeat;
+  /* Фон установлен в HTML для корректной работы с jsDelivr */
   background-size: auto;
   
 }

